@@ -27,10 +27,36 @@
          border: 0;
       }
 		@media screen and (max-width: 599.98px) {
-
+         .two-columns .padding,
+         .two-third-columns .padding,
+         .three-columns .padding {
+            padding-right: 0!important;
+            padding-left: 0!important;
+         }
+         img.two-col-img {
+            width: 300px!important;
+            max-width: 300px!important;
+         }
+         .two-third-columns .padding.first {
+            padding-bottom: 0!important;
+         }
+         .two-third-columns .padding.last {
+            padding-top: 0!important;
+         }
+         img.one-third-col-img,
+         img.three-col-img-last{
+            width: 200px!important;
+            max-width: 200px!important;
+         }
+         .two-third-columns .content {
+            text-align: center!important;
+         }
       }
       @media screen and (max-width: 399.98px) {
-
+         img.three-col-img {
+            width: 200px!important;
+            max-width: 200px!important;
+         }
       }
 
       /* Custom Dark Mode Colors */
@@ -190,7 +216,7 @@
                                  <table class="content" style="border-spacing: 0; text-align: left;" role="presentation">
                                     <tr>
                                        <td>
-                                          <a href="https://example.com" target="_blank"><img src="https://i.ibb.co/Tmg3qbV/man-teal.jpg" alt="" width="260" style="max-width: 260px; border-radius: 8px;" border="0"></a>
+                                          <a href="https://example.com" target="_blank"><img class="two-col-img" src="https://i.ibb.co/Tmg3qbV/man-teal.jpg" alt="" width="260" style="max-width: 260px; border-radius: 8px;" border="0"></a>
                                        </td>
                                     </tr>
                                     <tr>
@@ -225,7 +251,7 @@
                                  <table class="content" style="border-spacing: 0; text-align: left;" role="presentation">
                                     <tr>
                                        <td>
-                                          <a href="https://example.com" target="_blank"><img src="https://i.ibb.co/nQn29Sg/woman-teal.jpg" alt="" width="260" style="max-width: 260px; border-radius: 8px;" border="0"></a>
+                                          <a href="https://example.com" target="_blank"><img class="two-col-img" src="https://i.ibb.co/nQn29Sg/woman-teal.jpg" alt="" width="260" style="max-width: 260px; border-radius: 8px;" border="0"></a>
                                        </td>
                                     </tr>
                                     <tr>
@@ -278,11 +304,11 @@
 
                         <table class="column" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 200px; display: inline-block;" role="presentation">
                            <tr>
-                              <td class="padding first" style="padding: 15px 20px; background-color: #1e5d7b;">
+                              <td class="padding first" style="padding: 15px 20px 15px 20px; background-color: #1e5d7b;">
                                  <table class="content" style="border-spacing: 0; text-align: center;" role="presentation">
                                     <tr>
                                        <td>
-                                          <a href="https://example.com" target="_blank"><img src="https://i.ibb.co/j852yw3/teal-circle.png" alt="" width="160" style="max-width: 160px;" border="0"></a>
+                                          <a href="https://example.com" target="_blank"><img class="one-third-col-img" src="https://i.ibb.co/j852yw3/teal-circle.png" alt="" width="160" style="max-width: 160px;" border="0"></a>
                                        </td>
                                     </tr>
                                  </table>
@@ -296,7 +322,7 @@
 
                         <table class="column" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 400px; display: inline-block;" role="presentation">
                            <tr>
-                              <td class="padding last" style="padding: 30px 10px 15px; background-color: #1e5d7b;">
+                              <td class="padding last" style="padding: 30px 10px 15px 10px; background-color: #1e5d7b;">
                                  <table class="content" style="border-spacing: 0; text-align: left;" role="presentation">
                                     <tr>
                                        <td style="vertical-align: middle; padding: 0px 10px 0px; background-color: #1e5d7b;">
